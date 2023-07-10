@@ -98,15 +98,13 @@ console.log(stringsLength);
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
 
-const numbers = [];
-
-for (let i = 1; i < 100; i++) {
-  numbers.push(i);
-}
-
 const oddArray = [];
 
-const onlyOdd = (numbers) => {
+const onlyOdd = () => {
+  const numbers = [];
+  for (let i = 1; i < 100; i++) {
+    numbers.push(i);
+  }
   numbers.forEach((number) => {
     if (number % 2) {
       oddArray.push(number);
@@ -114,7 +112,7 @@ const onlyOdd = (numbers) => {
   });
 };
 
-onlyOdd(numbers);
+onlyOdd();
 
 console.log(oddArray);
 
